@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TranslitWord">
+
+
+    <ScrollView
+        android:layout_above="@id/StaticLay2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <EditText
+            android:id="@+id/TranslaetWordRus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="Введите перевод..."/>
+        <EditText
+            android:id="@+id/DefenitionRus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:hint="Введите значение идиомы"
+            android:textSize="32sp"/>
+        <EditText
+            android:id="@+id/TranslaetWordEng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="Enter translation..."/>
+        <EditText
+            android:id="@+id/DefenitionEng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:hint="Enter defenition"
+            android:textSize="32sp"/>
+        <EditText
+            android:id="@+id/TranslaetWordChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="Введите перевод(Китай.)"/>
+        <EditText
+            android:id="@+id/DefenitionChi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:hint="Введите значение идиомы(Китай.)"
+            android:textSize="32sp"/>
+        <EditText
+            android:id="@+id/TranslaetWordJap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:hint="Введите перевод(Японск.)"/>
+        <EditText
+            android:id="@+id/DefenitionJap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:hint="Введите значение идиомы(Японск.)"
+            android:textSize="32sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/StaticLay2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/Change"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Изменить"
+            android:onClick="Change"
+            />
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Сохранить"
+            android:onClick="Save"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
